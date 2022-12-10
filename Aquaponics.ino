@@ -95,7 +95,7 @@ void loop()
   }
   String wh = String(whl);//轉換型態，方便後續LoRa發送
 
-  //上傳至物聯網監測網站
+  //上傳至物聯網監測網站(透過LoRa）
   String data =  vol + " " + moi + " " + tem + " " + wh + " ";//將資料打包成一串
   Serial.print(data);//將資料印出檢查
   datalen = data.length()+1;//確定資料長度
